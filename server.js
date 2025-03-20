@@ -11,7 +11,6 @@ const server = express()
 const redy = () => console.log("working: " + PORT);
 
 
-//usar cors y morgan
 server.use(express.urlencoded({extended:true}))
 server.use(express.json())
 server.use(cors())
@@ -19,5 +18,4 @@ server.use(morgan('dev'))
 
 
 
-//al agregar una ip local puedo ver en cualquier dispositivo de mi red
 server.listen(PORT, "0.0.0.0", redy)
