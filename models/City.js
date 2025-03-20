@@ -6,7 +6,7 @@ let schema = Schema({
     name: { type: String, required: true },
     images: { type: String, required: true },
     country: { type: String, required: true },
-    continent: { type: String, default: true },
+    continent: { type: String, required: true },
     description: { type: String, required: true},
     currency: { type: String, required: true}
 },{
