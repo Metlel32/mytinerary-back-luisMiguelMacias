@@ -7,11 +7,22 @@ let allCities = async (req, res, next) => {
             response: all
         })
     } catch (error) {
-        res.status(500).json({
-            response: error
-        })
+        next(error)
     }
 }
 
 
-export {allCities}
+
+let cityByID = async (req, res, next) => {
+    try {
+        let idQuery = req.params.idParams
+        let cityId = await City.findById(idQuery)
+        return res.status(200).json({
+            response: cityId
+        })
+    } catch (error) {
+        next(error)
+    }
+}
+
+export {allCities, cityByID}
