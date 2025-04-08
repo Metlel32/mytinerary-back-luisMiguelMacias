@@ -162,7 +162,14 @@ const cities = [
         continent: "Asia",
         description: "Seoul, the capital of South Korea, is a city where ancient traditions meet cutting-edge technology. Landmarks like Gyeongbokgung Palace, Bukchon Hanok Village, and the bustling streets of Myeongdong showcase the city's cultural richness. Seoul is also a global center for K-pop, fashion, and street food, with markets like Gwangjang offering authentic Korean cuisine. The futuristic Dongdaemun Design Plaza and the panoramic views from N Seoul Tower highlight the city's modern side. With its 24-hour energy, world-class shopping, and deep historical roots, Seoul is an exhilarating destination that never sleeps.",
         currency: "South Korean Won (KRW)"
-    }
+    }  
+      
+      
+      
+      
+      
+      
+    
 ]
 
 City.insertMany(cities)
