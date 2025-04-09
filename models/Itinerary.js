@@ -12,7 +12,8 @@ let schema = Schema({
     nameProfile: { type: String, required: true},
     hashtags: { type: [String], default: []},
     duration: {type: Number, required: true},
-    likes: {type: Number, required:true}
+    likes: {type: Number, required:true},
+    activities: {type: Schema.ObjectId, ref:''}
 },{
     timestamps: true
   })

@@ -8,7 +8,8 @@ let schema = Schema({
     country: { type: String, required: true },
     continent: { type: String, required: true },
     description: { type: String, required: true},
-    currency: { type: String, required: true}
+    currency: { type: String, required: true},
+    itineraries: {type: Schema.Types.ObjectId, ref:'Itineraries', required: true}
 },{
     timestamps: true
   })
