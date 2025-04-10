@@ -273,7 +273,7 @@ const itineraries = [
           duration: 90,
           likes: 0
         },
-        // instanbul
+        // Istanbul
         {
           name: "Hagia Sophia & Blue Mosque Tour",
           imageItinerary: "https://media.tacdn.com/media/attractions-splice-spp-674x446/0c/f7/cc/de.jpg",
@@ -295,7 +295,7 @@ const itineraries = [
           likes: 0
         },
   
-        //toronto
+        //Toronto
         {
           name: "CN Tower EdgeWalk Experience",
           imageItinerary: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/81/98/e4/edgewalk.jpg?w=1200&h=-1&s=1",
@@ -338,7 +338,7 @@ const itineraries = [
           likes: 0
         },
   
-        //singapore
+        //Singapore
   
         {
           name: "Gardens by the Bay Light Show",
@@ -361,7 +361,7 @@ const itineraries = [
           likes: 0
         },
   
-        //buenos Aires
+        //Buenos Aires
         {
           name: "La Boca Walking Tour",
           imageItinerary: "https://mediaim.expedia.com/localexpert/2805805/818a3548-e1da-4ef1-b7ed-8e52d106d9c9.jpg?impolicy=resizecrop&rw=1005&rh=565",
@@ -382,7 +382,7 @@ const itineraries = [
           duration: 120,
           likes: 0
         },
-        //barcelona
+        //Barcelona
         {
           name: "Sagrada Familia Guided Visit",
           imageItinerary: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJNccK-BF6x3te7E7iuEzgbfJnUcTIn_RvvA&s",

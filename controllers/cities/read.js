@@ -1,8 +1,9 @@
 import City from "../../models/City.js";
+import  "../../models/Itinerary.js";
 
 let allCities = async (req, res, next) => {
     try {
-        let all = await City.find().populate('itineraries', 'name price duration').exec()
+        let all = await City.find().populate('itineraries', 'name imageItinerary imageProfile price nameProfile hashtags duration likes').exec()
         return res.status(200).json({
             response: all
         })
@@ -16,7 +17,7 @@ let allCities = async (req, res, next) => {
 let cityByID = async (req, res, next) => {
     try {
         let idQuery = req.params.idParams
-        let cityId = await City.findById(idQuery)
+        let cityId = await City.findById(idQuery).populate('itineraries', 'name imageItinerary imageProfile price nameProfile hashtags duration likes').exec()
         return res.status(200).json({
             response: cityId
         })
