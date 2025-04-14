@@ -25,16 +25,16 @@ let itineraryById = async (req, res, next) => {
     }
 }
 
-let itineraryByCity = async (req, res, next) => {
+let itineraryByName = async (req, res, next) => {
     try {
-        let cityQuery = req.params.nameParams
-        let itineraryCity = await Itinerary.find({name: cityQuery})
+        let nameItinerary = req.params.nameParams
+        let itineraryName = await Itinerary.find({name: nameItinerary})
         return res.status(200).json({
-            resposne: itineraryCity
+            resposne: itineraryName
         })
     } catch (error) {
         next(error)
     }
 }
 
-export {allItineraries, itineraryById, itineraryByCity}
+export {allItineraries, itineraryById, itineraryByName}
